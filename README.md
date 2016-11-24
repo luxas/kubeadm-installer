@@ -18,7 +18,12 @@ $ docker run -it \
 ### How to uninstall/revert
 
 ```bash
-$ docker run -it -v /etc/cni:/etc/cni -v /etc/systemd:/etc/systemd -v /opt:/opt -v /usr/bin:/usr/bin luxas/kubeadm-installer ${your_os_here} uninstall
+$ docker run -it 	\
+	-v /etc/cni:/rootfs/etc/cni \
+	-v /etc/systemd:/rootfs/etc/systemd \
+	-v /opt:/rootfs/opt \
+	-v /usr/bin:/rootfs/usr/bin \
+	luxas/kubeadm-installer ${your_os_here} uninstall
 ```
 
 ### What's inside?
