@@ -1,5 +1,12 @@
 ## kubeadm installer for CoreOS, Ubuntu, Debian, CentOS and Fedora
 
+
+> **MAINTAINER HAS SWITCHED !**
+>
+> Use https://github.com/xakraz/kubeadm-installer for the latest update and PRs
+
+
+
 ### How to run install kubeadm
 
 Given docker already is installed (otherwise, run `curl get.docker.com | bash`), you can install kubeadm easily!
